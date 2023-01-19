@@ -400,6 +400,15 @@ body {
   margin-right: 24px;
 }
 
+.portfolio-nav-link {
+}
+
+.portfolio-nav-link:hover,
+.portfolio-nav-link:focus {
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(46, 47, 66, 0.08), 0px 3px 1px rgba(46, 47, 66, 0.1);
+}
+
 .filter-btn-active {
   color: var(--hero-text-color);
   background-color: #404bbf;
@@ -442,15 +451,6 @@ body {
 .filter-btn:focus {
   color: var(--hero-text-color);
   background-color: #404bbf;
-}
-
-.portfolio-nav-link {
-}
-
-.portfolio-nav-link:hover,
-.portfolio-nav-link:focus {
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12),
-    0px 2px 1px rgba(46, 47, 66, 0.08), 0px 3px 1px rgba(46, 47, 66, 0.1);
 }
 
 .portfolio-link {
