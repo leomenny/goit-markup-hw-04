@@ -147,6 +147,14 @@ body {
   text-align: center;
   padding-top: 188px;
   padding-bottom: 188px;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../img/hero/bg.jpg");
+  background-size: cover;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .hero-title {
@@ -180,12 +188,32 @@ body {
   padding-bottom: 120px;
 }
 
-.feature {
+.goals-and-benefits-list {
   justify-content: space-between;
   column-gap: 24px;
 }
 
-.goals-and-benefits-item {
+.goals-and-benefits-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 264px;
+  height: 112px;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+}
+
+.goals-and-benefits-link:hover,
+.goals-and-benefits-link:focus {
+  border: 1px solid #4d5ae5;
+}
+
+.goals-and-benefits-link:hover .goals-and-benefits-icon,
+.goals-and-benefits-link:focus .goals-and-benefits-icon {
+  fill: #4d5ae5;
+}
+
+.goals-and-benefits-text {
   width: 266px;
 }
 
@@ -219,13 +247,13 @@ body {
   margin-bottom: 8px;
 }
 
-.goals-and-benefits-item,
+.goals-and-benefits-text,
 .job-title,
 .portfolio-service {
   color: var(--secondary-text-color);
   font-weight: 400;
   font-family: var(--primary-font);
-  font-size: 16px;
+  font-size: var(--primary-text-font-size);
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
@@ -252,19 +280,6 @@ body {
 }
 
 /* our team */
-/* portfolio */
-
-.explanation-for-cards-studio {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-/* our team */
-
-.name-team,
-.job-title {
-  text-align: center;
-}
 
 .our-team-background {
   background-color: #f4f4fd;
@@ -274,6 +289,92 @@ body {
 
 .foto-background {
   background-color: var(--hero-text-color);
+}
+
+.card-team {
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.explanation-for-cards-studio {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.name-team,
+.job-title {
+  text-align: center;
+}
+
+.job-title {
+  margin-bottom: 8px;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+}
+
+.social-icon {
+  fill: #f4f4fd;
+}
+
+/* customers */
+
+.customers {
+  padding-top: 130px;
+  padding-bottom: 120px;
+}
+
+.title-customers {
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-family: var(--primary-font);
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+.customers-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.customers-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 168px;
+  height: 88px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+}
+
+.customers-link:hover,
+.customers-link:focus {
+  border: 1px solid #4d5ae5;
+}
+
+.customers-link:hover .customers-icon,
+.customers-link:focus .customers-icon {
+  fill: #4d5ae5;
+}
+
+.customers-icon {
+  fill: #8e8f99;
 }
 
 /* portfolio */
@@ -329,6 +430,22 @@ body {
   border: none;
 }
 
+.portfolio-nav-link {
+}
+
+.portfolio-nav-link:hover,
+.portfolio-nav-link:focus {
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(46, 47, 66, 0.08), 0px 3px 1px rgba(46, 47, 66, 0.1);
+}
+
+.portfolio-link {
+}
+
+.portfolio-link:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
 .explanation-for-cards-portfolio {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -342,6 +459,10 @@ body {
   background-color: var(--primary-text-color);
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+.footer-container {
+  display: flex;
 }
 
 .footer-logo-web {
@@ -371,4 +492,43 @@ body {
   letter-spacing: 0.02em;
   width: 264px;
   margin-top: 16px;
+}
+
+.footer-social-media {
+  color: #ffffff;
+  font-weight: 500;
+  font-family: var(--primary-font);
+  font-size: var(--primary-text-font-size);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
+
+.social-media {
+  margin-left: 120px;
+}
+
+.footer-social-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: #31d0aa;
+}
+
+.footer-social-icon {
+  fill: #f4f4fd;
 }
